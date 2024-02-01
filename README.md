@@ -24,22 +24,21 @@ Build the image of the bridge builder's base
 mkdir ~/Desktop/humble_bridge_test_2024_01/
 cd !:1
 git clone git@github.com:li9i/ros1_humble_bridge_template.git
-cd ros1-humble-bridge-builder-base
+cd ros1_humble_bridge_template/ros1-humble-bridge-builder-base
 reset; docker build --progress=plain -t li9i/ros1-humble-bridge-builder-base:latest .
 ```
 
 Now build the bridge builder
 
 ```
-cd ros1_bridge
+cd ~/Desktop/humble_bridge_test_2024_01/ros1_bridge
 docker build --progress=plain -t li9i/ros1-humble-bridge:latest .
 ```
 
 The bridge builder is called a builder because if you extract it then you get a
-humble bridge workspace
+humble bridge workspace:
 
 ```
-cd ros1_bridge
 docker run --rm li9i/ros1-humble-bridge:latest | tar xvzf -
 ```
 
