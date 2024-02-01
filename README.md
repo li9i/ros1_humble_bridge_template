@@ -1,3 +1,8 @@
+# Why use this repository
+
+Because you are in a situation where ROS 2 humble packages require
+communication with ROS 1 packages through custom-made msgs or srvs.
+
 # Summary
 
 This repository hosts dockerfiles, ROS 1 kinetic, and ROS 2 humble packages.
@@ -15,11 +20,6 @@ efficiency reasons this image is based on the `ros1-humble-bridge-builder-base`
 image. When extracted the bridge must reside under `ros1_bridge`, alongside
 all ROS and ROS 2 packages.
 
-# Why use this repository
-
-Because you are in a situation where ROS 2 humble packages require
-communication with ROS 1 packages through custom-made msgs or srvs.
-
 # Assumptions / generalisations
 
 It is assumed that ROS 1 packages run through docker and ROS 2 packages run
@@ -35,6 +35,8 @@ natively on Ubuntu 22.04. In the general case you would
 Table of Contents
 =================
 * [Summary](#summary)
+* [Assumptions / generalisations](#assumptions--generalisations)
+* [Table of Contents](#table-of-contents)
 * [Clone this repository](#clone-this-repository)
 * [Build phase](#build-phase)
   * [Build ROS publisher docker image](#terminal-1-build-ros-publisher-docker-image)
