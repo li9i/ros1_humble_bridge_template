@@ -36,7 +36,6 @@ Table of Contents
 =================
 * [Summary](#summary)
 * [Assumptions / generalisations](#assumptions--generalisations)
-* [Table of Contents](#table-of-contents)
 * [Clone this repository](#clone-this-repository)
 * [Build phase](#build-phase)
   * [Build ROS publisher docker image](#terminal-1-build-ros-publisher-docker-image)
