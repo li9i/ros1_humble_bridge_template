@@ -1,3 +1,21 @@
+# Summary
+
+This repository hosts dockerfiles, ROS 1 kinetic, and ROS 2 humble packages.
+The end result is communication between the two ROS versions with custom
+messages.
+
+There are three main components to it:
+- A ROS 2 humble listener pkg (lives under `ros1_pkgs_ws/src/cpp_pubsub` and must also be placed under `ros1_bridge/`)
+- A ROS 1 kinetic talker pkg (lives under `ros1_pkgs_docker/ros1_talker` and must also be placed under `ros1_bridge/`)
+- The bridge (`ros1-humble-bridge-builder-base` and `ros1_bridge`)
+
+The bridge is extracted as a ROS 2 workspace from a docker container that
+is an instantiation of a builder image (`ros1-humble-bridge-builder`). For
+efficiency reasons this image is based on the `ros1-humble-bridge-builder-base`
+image.  When extracted the bridge must reside under `ros1_bridge`, alongside
+with `cpp_pubsub` and `ros1_talker`.
+
+
 # 0. The basics
 
 Build the image of the bridge builder's base
