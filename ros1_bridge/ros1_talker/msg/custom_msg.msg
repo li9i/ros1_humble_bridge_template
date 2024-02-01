@@ -1,6 +1,0 @@
-Header header
-string child_frame_id
-bool custom_bool
-int8 custom_int
-float64 custom_double
-geometry_msgs/PoseWithCovarianceStamped pose
