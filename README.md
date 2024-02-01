@@ -16,6 +16,22 @@ image. When extracted the bridge must reside under `ros1_bridge`, alongside
 all ROS and ROS 2 packages.
 
 
+Table of Contents
+=================
+* [Summary](#summary)
+* [Clone this repository](#clone-this-repository)
+* [Build phase](#build-phase)
+  * [Build ROS publisher docker image](#terminal-1-build-ros-publisher-docker-image)
+  * [`colcon build` ROS 2 listener](#terminal-2-colcon-build-ros-2-listener)
+  * [Build the image of the bridge builder's base](#terminal-3-build-the-image-of-the-bridge-builders-base)
+    * [Link packages into bridge without duplication](#link-packages-into-bridge-without-duplication)
+* [Run phase](#run-phase)
+  * [Run ROS publisher](#1-terminal-1-run-ros-publisher)
+  * [Run ROS 2 listener](#2-terminal-2-run-ros-2-listener)
+  * [Run `ros1_humble_bridge`](#3-terminal-3-run-ros1_humble_bridge)
+
+
+
 # Clone this repository
 
 ```
