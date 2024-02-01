@@ -1,0 +1,7 @@
+To build:
+
+`docker build --progress=plain -t li9i/bridge_ros1_talker:latest .`
+
+To run:
+
+`docker run -it --ipc=host --net=host li9i/ros1_talker:latest`
