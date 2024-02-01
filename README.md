@@ -21,7 +21,7 @@ with `cpp_pubsub` and `ros1_talker`.
 Build the image of the bridge builder's base
 
 ```
-mkdir ~/humble_bridge_test/
+mkdir ~/ros2_humble_bridge_test/
 cd !:1
 git clone git@github.com:li9i/ros1_humble_bridge_template.git
 cd ros1_humble_bridge_template/ros1-humble-bridge-builder-base
@@ -31,7 +31,7 @@ reset; docker build --progress=plain -t li9i/ros1-humble-bridge-builder-base:lat
 Now build the bridge builder
 
 ```
-cd ~/humble_bridge_test/ros1_humble_bridge_template/ros1_bridge
+cd ~/ros2_humble_bridge_test/ros1_humble_bridge_template/ros1_bridge
 docker build --progress=plain -t li9i/ros1-humble-bridge:latest .
 ```
 
@@ -43,7 +43,7 @@ docker run --rm li9i/ros1-humble-bridge:latest | tar xvzf -
 ```
 
 This will create a `ros1_humble_bridge_ws` directory under
-`~/humble_bridge_test/ros1_humble_bridge_template/ros1_bridge`
+`~/ros2_humble_bridge_test/ros1_humble_bridge_template/ros1_bridge`
 
 
 # 1. Terminal 1: Build and run ROS publisher
@@ -51,7 +51,7 @@ This will create a `ros1_humble_bridge_ws` directory under
 ## Build
 
 ```
-cd ~/humble_bridge_test/ros1_humble_bridge_template/ros1_pkgs_docker
+cd ~/ros2_humble_bridge_test/ros1_humble_bridge_template/ros1_pkgs_docker
 docker build --progress=plain -t li9i/bridge_ros1_talker:latest .
 ```
 
@@ -72,7 +72,7 @@ roslaunch ros1_talker ros1_talker.launch
 
 ```
 source /opt/ros/humble/setup.bash
-cd ~/humble_bridge_test/ros1_humble_bridge_template/ros1_bridge/ros1_humble_bridge_ws/
+cd ~/ros2_humble_bridge_test/ros1_humble_bridge_template/ros1_bridge/ros1_humble_bridge_ws/
 source install/local_setup.bash
 ros2 run ros1_bridge dynamic_bridge
 ```
@@ -81,7 +81,7 @@ ros2 run ros1_bridge dynamic_bridge
 
 ```
 source /opt/ros/humble/setup.bash
-cd ~/humble_bridge_test/ros1_humble_bridge_template/ros2_pkgs_ws/
+cd ~/ros2_humble_bridge_test/ros1_humble_bridge_template/ros2_pkgs_ws/
 source install/local_setup.bash
 ros2 run cpp_pubsub listener
 ```
