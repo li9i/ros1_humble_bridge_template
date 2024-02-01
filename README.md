@@ -34,7 +34,7 @@ cd ~/ros1_humble_bridge_test/ros1_humble_bridge_template/ros2_pkgs_ws/
 colcon build
 ```
 
-# Terminal 3: Build the image of the bridge builder's base
+## Terminal 3: Build the image of the bridge builder's base
 
 ```
 mkdir ~/ros1_humble_bridge_test/
@@ -46,7 +46,7 @@ docker build --progress=plain -t li9i/ros1-humble-bridge-builder-base:latest .
 
 Now build the bridge builder.
 
-## Link packages into bridge without duplication
+### Link packages into bridge without duplication
 
 Before doing that though there is the problem of package redundancy: For the
 bridge to be able to bridge packages using custom msgs/srvs these packages must
