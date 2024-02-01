@@ -30,6 +30,7 @@ natively on Ubuntu 22.04. In the general case you would
 - consider using a bash script to launch them (e.g.
   `ros1_pkgs_docker/1.roslaunch.sh`)
 - place your ROS 2 packages under `ros2_pkgs_ws/src` (e.g. the humble pkg `cpp_pubsub`)
+- create mountpoints for all customly-bridged ROS packages under the directory where the bridge lives (`ros1_bridge/`)
 
 
 Table of Contents
