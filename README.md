@@ -61,8 +61,7 @@ colcon build
 ## Terminal 3: Build the image of the bridge builder's base
 
 ```
-
-cd ros1_humble_bridge_template/ros1-humble-bridge-builder-base
+cd ~/ros1_humble_bridge_test/ros1_humble_bridge_template/ros1-humble-bridge-builder-base
 docker build --progress=plain -t li9i/ros1-humble-bridge-builder-base:latest .
 ```
 

@@ -1,0 +1,12 @@
+-
+  ros1_package_name: 'ros1_talker'
+  ros1_message_name: 'custom_msg'
+  ros2_package_name: 'cpp_pubsub'
+  ros2_message_name: 'CustomMsg'
+  fields_1_to_2:
+    header: 'header'
+    child_frame_id: 'child_frame_id'
+    custom_bool: 'custom_bool'
+    custom_int: 'custom_int'
+    custom_double: 'custom_double'
+    pose: 'pose_modified'
