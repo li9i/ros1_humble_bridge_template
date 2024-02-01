@@ -16,8 +16,16 @@ image. When extracted the bridge must reside under `ros1_bridge`, alongside
 all ROS and ROS 2 packages.
 
 
+# Clone this repository
+
+```
+mkdir ~/ros1_humble_bridge_test/
+cd !:1
+git clone git@github.com:li9i/ros1_humble_bridge_template.git
+```
 
 # Build phase
+
 
 ## Terminal 1: Build ROS publisher docker image
 
@@ -37,9 +45,7 @@ colcon build
 ## Terminal 3: Build the image of the bridge builder's base
 
 ```
-mkdir ~/ros1_humble_bridge_test/
-cd !:1
-git clone git@github.com:li9i/ros1_humble_bridge_template.git
+
 cd ros1_humble_bridge_template/ros1-humble-bridge-builder-base
 docker build --progress=plain -t li9i/ros1-humble-bridge-builder-base:latest .
 ```
