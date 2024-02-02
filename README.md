@@ -10,8 +10,8 @@ The end result is communication between the two ROS versions with custom
 messages.
 
 There are three main components to it:
-- A ROS 2 humble listener pkg (lives under `ros1_pkgs_ws/src/cpp_pubsub` and must also be placed under `ros1_bridge/`)
-- A ROS 1 kinetic talker pkg (lives under `ros1_pkgs_docker/ros1_talker` and must also be placed under `ros1_bridge/`)
+- A ROS 2 humble listener pkg (lives under `ros1_pkgs_ws/src/cpp_pubsub`)
+- A ROS 1 kinetic talker pkg (lives under `ros1_pkgs_docker/ros1_talker`)
 - The bridge (`ros1-humble-bridge-builder-base` and `ros1_bridge`)
 
 The bridge is extracted as a ROS 2 workspace from a docker container that
