@@ -155,3 +155,13 @@ cd ~/ros1_humble_bridge_test/ros1_humble_bridge_template/ros1_bridge/ros1_humble
 source install/local_setup.bash
 ros2 run ros1_bridge dynamic_bridge
 ```
+
+# Cleanup phase
+
+All mounted package directories should be unmounted after execution has ceased
+
+```
+cd ~/ros1_humble_bridge_test/ros1_humble_bridge_template/ros1_bridge
+sudo umount ros1_talker
+sudo umount cpp_pubsub
+```
