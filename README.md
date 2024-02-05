@@ -129,7 +129,7 @@ This will create a `ros1_humble_bridge_ws` directory under
 ## 1. Terminal 1: Run ROS publisher
 
 ```
-docker run -it --ipc=host --net=host li9i/ros1_talker:latest
+docker run -it --ipc=host --net=host li9i/bridge_ros1_talker:latest
 ```
 ```
 export ROS_MASTER_URI=http://localhost:11311
