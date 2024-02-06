@@ -123,6 +123,13 @@ docker run --rm li9i/ros1-humble-bridge:latest | tar xvzf -
 This will create a `ros1_humble_bridge_ws` directory under
 `~/ros1_humble_bridge_test/ros1_humble_bridge_template/ros1_bridge`
 
+After this point all mounted package directories are unnecessary and should be unmounted
+
+```
+sudo umount ros1_talker
+sudo umount cpp_pubsub
+```
+
 
 # Run phase
 
@@ -154,14 +161,4 @@ ros2 run cpp_pubsub listener
 cd ~/ros1_humble_bridge_test/ros1_humble_bridge_template/ros1_bridge/ros1_humble_bridge_ws/
 source install/local_setup.bash
 ros2 run ros1_bridge dynamic_bridge
-```
-
-# Cleanup phase
-
-All mounted package directories should be unmounted after execution has ceased
-
-```
-cd ~/ros1_humble_bridge_test/ros1_humble_bridge_template/ros1_bridge
-sudo umount ros1_talker
-sudo umount cpp_pubsub
 ```

@@ -1,6 +1,0 @@
-{
-  "package_name": "cpp_pubsub",
-  "non_idl_tuples": [
-    "/home/afilot/ros1_humble_bridge_test/ros1_humble_bridge_template/ros2_pkgs_ws/src/cpp_pubsub:msg/CustomMsg.msg"
-  ]
-}
